@@ -8,6 +8,7 @@ body {
   min-width: 1100px;
   margin: 0;
   font-family: Raleway, sans-serif;
+  background-color: #fff;
 }
 
 h1,
@@ -27,6 +28,14 @@ blockquote {
 
 a {
   color: inherit;
+}
+
+a:visited {
+  color: #6f206f;
+}
+
+a:hover {
+  color: #2a1c7a;
 }
 
 img {
