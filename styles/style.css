@@ -78,7 +78,6 @@
 
 .cover {
   position: relative;
-  z-index: 0;
   padding: 165px 50px 50px;
   background: url(../images/cover.jpg) center center/cover no-repeat;
 }
@@ -87,17 +86,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
+  position: relative;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .aligned-text {
@@ -116,10 +116,7 @@
 }
 
 .aligned-text_center {
-  display: block;
-  margin-bottom: 20px;
   line-height: 1;
-  letter-spacing: 30px;
   text-align: center;
 }
 
@@ -132,10 +129,8 @@
 }
 
 .aligned-text_right {
-  display: block;
   margin-bottom: 135px;
   line-height: 1;
-  letter-spacing: 30px;
   text-align: right;
 }
 
@@ -148,6 +143,7 @@
 }
 
 .cover__description {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -158,16 +154,14 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .cover__description-text {
-  color: #fff;
-  font-weight: 400;
-  font-size: 22px;
   word-spacing: 24px;
 }
 
-.cover__description-text .word-spacing-extended {
+.word-spacing-extended {
   word-spacing: 17px;
 }
 
@@ -220,7 +214,6 @@
 
 .card {
   position: relative;
-  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -240,60 +233,30 @@
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.card_type_film .card__title {
+.card__title {
   color: #fff;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
+  z-index: 1;
 }
 
-.card_type_film .card__text {
+.card__text {
   color: #fff;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
+  z-index: 1;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.card_type_book .card__title {
-  color: #fff;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.2;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-}
-
-.card_type_book .card__text {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-}
-
-.card_type_picture .card__title {
-  color: #fff;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.2;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-}
-
-.card_type_picture .card__text {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2;
 }
 
 .lots__look-more-link {
